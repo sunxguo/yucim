@@ -1,0 +1,26 @@
+/**
+ * @authors Yumlee (543265835@qq.com)
+ * @date    2015-10-03 10:25:35
+ * @version $Id$
+ */
+@import url(chestnut.mobile.css);
+@import url(../plugins/icomoon/style.css);
+/* ==========================================================================
+    Header
+   ========================================================================== */
+.header{width: 100%;height: 40px;line-height: 40px;background-color: #fff;text-align: center;position: relative;font-size: 16px;}
+.header i{position: absolute;left: 0;font-size: 14px;}
+.header .right{position: absolute;right: 8px;}
+.address{padding: 8px 30px;background-color: #fff;border-top: 1px solid #ccc;line-height: 2;}
+.ware{padding: 8px;}
+.ware div:nth-child(1){width: 35%;}
+.ware div:nth-child(1)>img{height: 85px;}
+.ware div:nth-child(2){width: 65%;padding: 0 5px;}
+.ware div:nth-child(2)>p{height: 28px;overflow: hidden;margin-bottom: 40px;}
+.wareOpt{background-color: #fff;line-height: 25px;}
+.wareOpt>li{border-bottom: 1px solid #ccc;padding: 8px;}
+.wareOpt>li:last-child{border: 0;}
+.wareOpt .remark{width: 80%;}
+.remark input{width: 100%;border: 0;}
+.confirmBtn{text-align: right;position: fixed;bottom: 0;width: 100%;background-color: #fff;height: 50px;line-height: 50px;}
+.confirmBtn button{width: 80px;background-color: #f60;color: #fff;border: 0;height: 100%;margin-left: 10px;}

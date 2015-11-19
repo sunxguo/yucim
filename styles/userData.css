@@ -1,0 +1,25 @@
+/**
+ * @authors Yumlee (543265835@qq.com)
+ * @date    2015-10-03 10:25:35
+ * @version $Id$
+ */
+@import url(chestnut.mobile.css);
+@import url(../plugins/icomoon/style.css);
+body{padding: 0;}
+/* ==========================================================================
+    Header
+   ========================================================================== */
+.header{width: 100%;height: 40px;line-height: 40px;background-color: #fff;text-align: center;position: relative;font-size: 16px;border-bottom: 2px solid #ccc;}
+.header i{position: absolute;left: 0;font-size: 14px;}
+.userData{background-color: #fff;}
+.userData>li>a{border-bottom: 1px solid #ccc;padding: 12px 8px;}
+.userData>li:first-child>a{height: 56px;line-height: 56px;}
+.userData>li:first-child .des{height: 56px;}
+.userData>li:first-child i{line-height: 56px;margin-left: 10px;}
+.userData>li:first-child img{width: 50px;height: 50px;border-radius: 50px;border: 3px solid #e8e8e8;}
+.userData>li:last-child{border: 0;}
+.userData .des{color: #aaa;}
+.userData .des>span{padding-right: 10px;}
+.userFn{background-color: #fff;}
+.userFn>li{border-bottom: 1px solid #ccc;padding: 12px 8px;}
+.userFn .des{color: #aaa;}

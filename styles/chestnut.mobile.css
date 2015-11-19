@@ -1,0 +1,30 @@
+/* CSS Yumlee(543265835@qq.com) V1.0 理念：为每一个网站定制适合的CSS 特色：1.适应中文 2.基于最新主流浏览器 3.移动端*/@charset "UTF-8";
+/*reset*/body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,input,textarea,th,td{margin:0;padding:0;box-sizing:border-box}h1{font-size:18px}h2{font-size:16px}h3{font-size:14px}h4,h5,h6{font-size:100%}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp,tt{font-family:"Courier New",Courier,monospace}small{font-size:12px}ul,ol{list-style:none}a{text-decoration:none;color:#000}q:before,q:after{content:''}legend{color:#000}fieldset,img{border:none}button,input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}hr{border:none;height:1px;}
+/*base*/.list:after,.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.flex{display:flex;display:-webkit-box;}.flex>*{flex:1;-webkit-box-flex:1;width:100%;}.list>*{float:left;}.hide{display:none;}.fullCol{width:100%;}img{width: 100%;}.fl{float: left;}.fr{float: right;}li>a{display: block;}.tc{text-align: center;}
+/*global*/
+/* ==========================================================================
+    Global
+   ========================================================================== */
+/* 设置默认字体 */
+body { /* for ie */background-color: #e8e8e8;font: 14px/1 "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;padding-bottom: 52px;}
+.mb10{margin-bottom: 10px !important;}
+.mb20{margin-bottom: 20px !important;}
+.mainColor{color: #70b500;}
+.subColor{color: #f60;}
+/* ==========================================================================
+    Nav/Fixed
+   ========================================================================== */
+nav.navFixed{width: 100%;position: fixed;bottom: 0;background-color: #fff;border-top: 1px solid #ccc;z-index: 99;}
+nav.navFixed a{display: block;padding: 8px 0;color: #000;text-align: center;}
+nav.navFixed a.on{color: #f60;}
+.navFixed i{display: block;font-size: 150%;}
+/* ==========================================================================
+    Box
+   ========================================================================== */
+.boxTit{padding: 8px 12px;font-size: 16px;}
+.boxCon{margin-left: 12px;}
+.boxCon>li{margin-right: 12px;}
+.boxCon>li p{height: 55px;margin-right: 5px;overflow: hidden;}
+.boxCon>li img{height: 75px;}
+
+.icon_btn{padding: 14px;}

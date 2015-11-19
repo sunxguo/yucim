@@ -1,0 +1,25 @@
+/**
+ * @authors Yumlee (543265835@qq.com)
+ * @date    2015-10-03 10:25:35
+ * @version $Id$
+ */
+@import url(chestnut.mobile.css);
+@import url(../plugins/icomoon/style.css);
+/* ==========================================================================
+    UInfo
+   ========================================================================== */
+.uInfo{padding: 15px;line-height: 56px;background-color: #f60;color: #fff;font-size: 18px;}
+.uInfo>li:nth-child(1){width: 56px;height: 56px;}
+.uInfo>li:nth-child(1)>img{height: 50px;width: 50px;border-radius: 50px;border: 3px solid #fff;}
+.uInfo>li:nth-child(2){width: 78%;padding-left: 15px;}
+.uInfo>li:nth-child(3){width: 2%;}
+.uSubInfo{text-align: center;border-top: 1px solid #fff;background-color: #f60;line-height: 18px;}
+.uSubInfo>li>a{border-right: 1px solid #fff;padding: 10px 0;color: #fff;}
+.uSubInfo>li:last-child>a{border-right: 0;}
+.order{background-color: #fff;font-size: 16px;}
+.order>li:first-child>a{padding: 12px 8px;border-bottom: 1px solid #ccc;}
+.order>li>ul>li>a{padding: 15px 0;}
+.order ul{font-size: 13px;}
+.userList{background-color: #fff;font-size: 16px;}
+.userList>li>a{padding: 12px 8px;border-bottom: 1px solid #ccc;}
+.userList>li:last-child>a{border: 0;}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>商城首页</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="styles/home.css" />
+</head>
+<body>
+<nav class="navFixed">
+	<ul class="flex">
+		<li><a class="on"><i class="icon-home-outline"></i>首页</a></li>
+		<li><a href="goodsClass.html"><i class="icon-th-list-outline"></i>分类</a></li>
+		<li><a href="cart.html"><i class="icon-shopping-cart"></i>购物车</a></li>
+		<li><a href="uCenter.html"><i class="icon-user2"></i>个人中心</a></li>
+	</ul>
+</nav>
+<header class="header">
+	<div><i class="icon-qrcode"></i></div>
+	<div><div class="searchIndex"><i class="icon-search"></i> 输入您要找的商品</div></div>
+	<div><i class="icon-comment"></i></div>
+</header>
+<div id="topBanner" class="focus mb10">
+	<div class="hd">
+		<ul></ul>
+	</div>
+	<div class="bd">
+		<ul>
+				<li><a href="detailWare.html"><img _src="images/m1.jpg" src="images/blank.png" /></a></li>
+				<li><a href="detailWare.html"><img _src="images/m2.jpg" src="images/blank.png"/></a></li>
+				<li><a href="detailWare.html"><img _src="images/m3.jpg" src="images/blank.png"/></a></li>
+		</ul>
+	</div>
+</div>
+<div class="hotPut mb10">
+	<div class="subColor boxTit">热门推荐</div>
+	<ul class="flex boxCon">
+		<li class="flex">
+			<div>
+				<p>星巴克星冰乐饮料6瓶礼</p>
+				<div class="subColor">50元</div>
+			</div>
+			<div><a href="detailWare.html"><img src="images/hot1.jpg" alt="星巴克星冰乐饮料" /></a></div>
+		</li>
+		<li class="flex">
+			<div>
+				<p>健身运动追踪智能手环计步器</p>
+				<div class="subColor">450元</div>
+			</div>
+			<div><a href="detailWare.html"><img src="images/hot2.jpg" alt="健身运动追踪智能手环计步器" /></a></div>
+		</li>
+	</ul>
+</div>
+<div class="secKill mb10">
+	<div class="boxTit"><span class="subColor">秒杀</span>●10点<a class="fr" href="wareslist.html">更多 <i class="icon-angle-right"></i></a></div>
+	<ul class="flex boxCon">
+		<li>
+			<div><a href="detailWare.html"><img src="images/hot1.jpg" alt="星巴克星冰乐饮料" /></a></div>
+			<div>
+				<div>￥8666</div>
+				<div>￥7689</div>
+			</div>
+		</li>
+		<li>
+			<div><a href="detailWare.html"><img src="images/hot1.jpg" alt="星巴克星冰乐饮料" /></a></div>
+			<div>
+				<div>￥296</div>
+				<div>￥769</div>
+			</div>
+		</li>
+		<li>
+			<div><a href="detailWare.html"><img src="images/hot1.jpg" alt="星巴克星冰乐饮料" /></a></div>
+			<div>
+				<div>￥1499</div>
+				<div>￥1900</div>
+			</div>
+		</li>
+		<li>
+			<div><a href="detailWare.html"><img src="images/hot1.jpg" alt="星巴克星冰乐饮料" /></a></div>
+			<div>
+				<div>￥300</div>
+				<div>￥569</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div id="footerBanner" class="focus mb10">
+	<div class="hd">
+		<ul></ul>
+	</div>
+	<div class="bd">
+		<ul>
+				<li><a href="detailWare.html"><img _src="images/m1.jpg" src="images/blank.png" /></a></li>
+				<!-- <li><a href="#"><img _src="images/m2.jpg" src="images/blank.png"/></a></li> -->
+				<!-- <li><a href="#"><img _src="images/m3.jpg" src="images/blank.png"/></a></li> -->
+		</ul>
+	</div>
+</div>
+</body>
+<script src="scripts/TouchSlide.1.1.js"></script>
+<script type="text/javascript">
+TouchSlide({ 
+	slideCell:"#topBanner",
+	titCell:".hd ul",
+	mainCell:".bd ul",
+	effect:"left",
+	autoPlay:true,
+	autoPage:true, //自动分页
+	switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+});
+TouchSlide({ 
+	slideCell:"#footerBanner",
+	titCell:".hd ul",
+	mainCell:".bd ul",
+	effect:"left",
+	autoPlay:true,
+	autoPage:true, //自动分页
+	switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+});
+</script>
+</html>

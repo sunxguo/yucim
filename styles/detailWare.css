@@ -1,0 +1,40 @@
+/**
+ * @authors Yumlee (543265835@qq.com)
+ * @date    2015-10-03 10:25:35
+ * @version $Id$
+ */
+@import url(chestnut.mobile.css);
+@import url(../plugins/icomoon/style.css);
+/* ==========================================================================
+    Header
+   ========================================================================== */
+.header{width: 100%;height: 40px;line-height: 40px;background-color: #fff;text-align: center;position: relative;font-size: 16px;}
+.header i{position: absolute;left: 0;font-size: 14px;}
+.header .right{position: absolute;right: 8px;}
+.wareImg{margin: 0 auto;}
+.wareInfo{background-color: #fff;padding: 12px 8px;}
+.wareInfo>div:nth-child(1){width: 75%;border-right: 1px solid #ccc;line-height: 1.5;height: 42px;overflow: hidden;}
+.wareInfo>div:nth-child(2){width: 25%;text-align: center;line-height: 3;}
+.warePrice{background-color: #fff;padding: 8px;font-size: 18px;}
+.wareOpt{padding: 15px 8px;background-color: #fff;}
+.wareOpt>span{padding: 0 5px;}
+.actionBox{position: fixed;bottom: 0;width: 100%;background-color: #fff;text-align: center;}
+/*.actionBox>li>a{padding: 8px 0;}*/
+.actionBox>li:nth-child(1){width: 20%;line-height: 18px;padding: 4.5px 0;border-right: 1px solid #ccc;}
+.actionBox>li:nth-child(2){width: 20%;line-height: 18px;padding: 4.5px 0;}
+.actionBox>li:nth-child(3){width: 30%;background-color: #fe9900;color: #fff;line-height: 45px;}
+.actionBox>li:nth-child(4){width: 30%;background-color: #f60;color: #fff;line-height: 45px;}
+.actionBox>li:nth-child(3)>a,
+.actionBox>li:nth-child(4)>a{color: #fff;}
+/**********mask**********/
+.mask{position: fixed;background-color: rgba(0,0,0,.6);width: 100%;height: 100%;z-index: 10;top: 0;}
+/**********wareOpt_body**********/
+.wareOpt_body{position: fixed;bottom: 0;z-index: 11;background-color: #fff;width: 100%;}
+.wareOpt_body_info{height: 80px;padding: 8px 8px 8px 120px;position: relative;}
+.wareOpt_body_info>div:nth-child(2){margin-bottom: 35px;color: #f60;font-size: 150%;}
+.wareOpt_body .img{position: absolute;width: 100px;margin: 8px;bottom: 0;left: 0;}
+.wareOpt_body .img>img{border-radius: 6px;border: 1px solid #ccc;}
+.wareOpt_body .cancel{position: absolute;padding: 8px;top: 0;right: 0;}
+.wareOpt_body_opt{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding: 8px;line-height: 28px;}
+.wareOpt_body_opt>li>ul>li{margin: 0 10px;border: 1px solid #ccc;text-align: center;height: 28px;line-height: 28px;border-radius: 4px;}
+.wareOpt_body_num{line-height: 25px;padding: 8px;}

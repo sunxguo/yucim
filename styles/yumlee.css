@@ -1,0 +1,279 @@
+/* CSS yumlee V1.0 理念：清除和重置是紧密不可分的 特色：1.适应中文 2.基于最新主流浏览器 3.移动端*/
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+h1 { font-size: 18px }
+h2 { font-size: 16px }
+h3 { font-size: 14px }
+h4, h5, h6 { font-size: 100% }
+
+address, cite, dfn, em, var { font-style: normal } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace } /* 统一等宽字体 */
+small { font-size: 12px } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none }
+
+/* 重置文本格式元素 */
+a { text-decoration: none;color: #000 }
+
+q:before, q:after { content: '' }
+
+/* 重置表单元素 */
+legend { color: #000 } /* for ie6 */
+fieldset, img { border: none } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%
+}/* 使得表单元素在 ie 下能继承字体大小 */
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+/* ==========================================================================
+    Global
+   ========================================================================== */
+/* 设置默认字体 */
+body { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+    background-color: #e8e8e8;
+	font: 12px/1 "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+    padding-bottom: 60px;
+}
+.list:after,.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
+/*超出省略*/
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*flex*/
+.flex {
+    display: flex;
+    display: -webkit-box;
+}
+.flex>* {
+    flex: 1;
+    -webkit-box-flex: 1;
+    width: 100%;
+}
+.list>* {
+    float: left;
+}
+.hide {
+    display: none;
+}
+/*图标样式*/
+i {
+    font-size: 150%;
+    line-height: 150%;
+}
+.fullCol {
+    width: 100%;
+}
+/* ==========================================================================
+    Header
+   ========================================================================== */
+.header {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #053F39;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    display: -webkit-box;
+}
+.header>div {
+    flex: 1;
+    -webkit-box-flex: 1;
+}
+.header>h1 {
+    flex: 6;
+    -webkit-box-flex: 6;
+}
+.header a {
+    color: #fff;
+}
+
+/* ==========================================================================
+    Nav/Fixed
+   ========================================================================== */
+nav.navFixed {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #053F39;
+}
+nav.navFixed>a {
+    display: block;
+    padding: 12px 0;
+    color: #000;
+    text-align: center;
+}
+.fixedTop {
+    position: fixed;
+    top: 0;
+}
+input.btnFixed {
+    width: 100%;
+    height: 50px;
+    background-color: #fd8000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+}
+/* ==========================================================================
+    Panel
+   ========================================================================== */
+dl.panel {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+dl.panel>dt {
+    padding: 10px 8px;
+    background-color: #b6b6b4;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+dl.panel>dt>i {
+    position: absolute;
+    right: 12px;
+    line-height: 12px;
+}
+dl.panel>dd {
+    padding: 5px 8px;
+    background-color: #fff;
+}
+dl.panel>dd .list {
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+dl.collapse>dd {
+    display: none;
+}
+/* ==========================================================================
+    List
+   ========================================================================== */
+/*list*/
+.list {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 5px 8px;
+    background-color: #fff;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.list>li>a {
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.list>li:first-child>a {
+    border-top: 1px solid #ccc;
+}
+.list>li>a>i {
+    line-height: 26px;
+    position: absolute;
+    right: 12px;
+}
+/*table*/
+.table {
+    line-height: 26px;
+    position: relative;
+    padding-right: 12px;
+}
+.flex.table>li:last-child {
+    width: 0;
+    position: absolute;
+    right: 12px;
+}
+.table i {
+    line-height: 26px;
+    color: #81807E;
+}
+/* ==========================================================================
+    User
+   ========================================================================== */
+.user>img {
+    width: 50px;
+    height: 50px;
+}
+/* ==========================================================================
+    Form
+   ========================================================================== */
+ /*去掉苹果表单样式*/
+select,button,input {-webkit-appearance: none}
+textarea {  -webkit-appearance: none}
+select,button,input {
+    width: 100%;
+    height: 28px;
+    padding: 5px 8px;
+    border: 0;
+    border-radius: 4px;
+}
+select {
+    background: #fff url(img/select.png) no-repeat right;
+    background-size: 30px 30px;
+    border: 1px solid #9A989B;
+}
+input {
+    background: #fff;
+    border: 1px solid #000;
+}
+input[type='button'] {
+    background: #488AC7;
+    color: #fff;
+    font-weight: bold;
+}
+.selectWrapper {
+    width: 95%;
+    margin: 10px auto;
+}
+/*onoff box*/
+.onoff input[type='radio'] {
+    display: none;
+}
+.onoff label {
+    background-color: #DEDEDC;
+    display: block;
+    text-align: center;
+    margin: 2px 0;
+}
+.onoff input[type='radio']:checked+label {
+    background-color: #368BC1;
+}
+/*check box*/
+.checkbox input[type='checkbox'] {
+    display: none;
+}
+.checkbox label {
+    display: block;
+    text-align: center;
+    margin: 3px;
+    border:1px dashed #000;
+}
+.checkbox input[type='checkbox']:checked+label {
+    background-color: #95B9C7;
+}
